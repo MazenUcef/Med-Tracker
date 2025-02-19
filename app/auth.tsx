@@ -25,7 +25,7 @@ const AuthScreen = () => {
 
     useEffect(() => {
         checkBiometrics()
-        navigate.setOptions({ headerShown: false })
+        // navigate.setOptions({ headerShown: false })
     }, [])
 
 
@@ -47,7 +47,7 @@ const AuthScreen = () => {
             })
 
             if (auth.success) {
-                router.replace('/')
+                router.replace('/home')
             } else {
                 setError('Authentication failed: Please try again')
             }

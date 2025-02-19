@@ -10,9 +10,9 @@ const SplashScreen = () => {
     const navigation = useNavigation();
 
 
-    
+
     useEffect(() => {
-        navigation.setOptions({ headerShown: false });
+        // navigation.setOptions({ headerShown: false });
         Animated.parallel([
             Animated.timing(fadeAnim, {
                 toValue: 1,
